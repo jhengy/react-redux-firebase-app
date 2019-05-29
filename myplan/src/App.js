@@ -4,6 +4,7 @@ import Navbar from "./components/layout/Navbar"
 import DashBoard from "./components/dashboard/Dashboard"
 import ProjectDetails from './components/projects/ProjectDetails'
 import SignIn from './components/auth/Signin'
+import Signup from "./components/auth/SignUp";
 
 function App() {
   // note that app is separated into Navbar and body page where the body page are different routed components
@@ -15,6 +16,7 @@ function App() {
           <Route exact path='/' component={DashBoard} />
           <Route path='/projects/:id' component={ProjectDetails}/>
           <Route path='/signin' component={SignIn}/>
+          <Route path='/signup' component={Signup}/>
         </Switch>
       </div>
     </BrowserRouter>
